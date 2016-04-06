@@ -157,8 +157,8 @@ uis.controller('uiSelectCtrl',
     }
   };
 
-  ctrl.focusSearchInput = function (initSearchValue) {
-    ctrl.search = initSearchValue || ctrl.search;
+  ctrl.focusSearchInput = function () {
+    ctrl.search = ctrl.search;
     ctrl.searchInput[0].focus();
   };
 

@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.16.1 - 2016-04-06T19:14:00.889Z
+ * Version: 0.16.1 - 2016-04-06T18:38:27.264Z
  * License: MIT
  */
 
@@ -419,8 +419,8 @@ uis.controller('uiSelectCtrl',
     }
   };
 
-  ctrl.focusSearchInput = function () {
-    ctrl.search = ctrl.search;
+  ctrl.focusSearchInput = function (initSearchValue) {
+    ctrl.search = initSearchValue || ctrl.search;
     ctrl.searchInput[0].focus();
   };
 
